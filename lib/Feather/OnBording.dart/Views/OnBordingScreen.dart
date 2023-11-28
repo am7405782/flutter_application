@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/LoginScrren.dart';
+import 'package:flutter_application_1/Feather/Login&register/Views/LoginViews.dart';
 import 'package:flutter_application_1/Feather/OnBording.dart/Widget/MyFadeAnimation.dart';
 import 'package:flutter_application_1/core/Constant.dart';
 import 'package:flutter_application_1/core/shard/imageAssets.dart';
@@ -164,8 +164,7 @@ class _FurnitureExampleState extends State<FurnitureExample>
                                 } else if (_currentIndex ==
                                     _furniture.length - 1) {
                                   navigetFinsh(
-                                      navig: const LoginScrren(),
-                                      context: context);
+                                      navig: LoginScrren(), context: context);
                                 }
                               },
                               color: Colors.orange,
@@ -234,8 +233,7 @@ class _FurnitureExampleState extends State<FurnitureExample>
                       borderRadius: BorderRadius.circular(40),
                     ),
                     onPressed: () {
-                      navigetFinsh(
-                          navig: const LoginScrren(), context: context);
+                      navigetFinsh(navig: LoginScrren(), context: context);
                     },
                     color: Colors.orange,
                     padding: const EdgeInsetsDirectional.only(
